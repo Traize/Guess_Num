@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Угадай число</div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="sidebar-info">
+                    <div class="difficulty-block">
+                        <span class="diff-title">Сложность:</span>
+                        <span class="current-diff">1 - 100</span>
+                    </div>
+                    <div class="attempts-block">
+                        <span class="attempts-title">Количество попыток:</span>
+                        <span class="current-attempts">0</span>
+                    </div>
+                </div>
+                <button class="btn retry">Начать заново</button>
+            </div>
+            <form class="content-window">
+                <div class="info">
+                </div>
+                <input type="number" class="guess-input" placeholder="Введите число">
+            </form>
+        </div>
+    </div>
+    <div class="modal-wrapper">
+        <div class="modal-content easeIn">
+            <div class="difficulty-block">
+                <span class="diff-title">Выберите сложность:</span>
+                <select name="diff" class="diff">
+                    <option name="diff" value="100">1 - 100</option>
+                    <option name="diff" value="1000">1 - 1000</option>
+                    <option name="diff" value="10000">1 - 10000</option>
+                </select>
+            </div>
+            <button class="btn start">Начать игру</button>
+        </div>
+    </div>
+
+</body>
+<script src="./src/js/main.js" type="module"></script>
+
+</html>
